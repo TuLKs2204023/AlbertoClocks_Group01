@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+    <title>Alberto Shop</title>
+
+    <link rel="stylesheet" href="shop.css">
+    <script src="shop.js"></script>
+</head>
+
+<body>
+
+    <div class="shop-Total" ng-app="myApp" ng-controller="myCtrl">
+        <div class="shop-Head">
+            <h2 ng-click="shopReset()">Watches</h2>
+        </div>
+
+        <hr>
+
+        <div class="shop-Nav">
+            <div class="dropdown">
+                <button onclick="dropDown()" class="dropbtn">Sort</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Features</a>
+                    <a href="#">Best Selling</a>
+                    <a href="#" ng-click="doSort('model')">A-Z</a>
+                    <a href="#" ng-click="doSort('model')">Z-A</a>
+                    <a href="#" ng-click="doSort('price')">High-Low</a>
+                    <a href="#">Low-High</a>
+                    <a href="#">New-Old</a>
+                    <a href="#">Old-New</a>
+                </div>
+            </div>
+            <input ng-model="search" type="text" placeholder="&#x1F50E;&#xFE0E;Search">
+        </div>
+
+        <hr>
+
+        <div class="shop-Section">
+            <div class="shop-Sidebar">
+                <p>Abilities</p>
+                <a href="#">In stock</a>
+                <a href="#">Out of stock</a>
+                <p>Price</p>
+                <!-- <input type="range" min="1" max="100" value="50"> -->
+                <input id="priceInput" type="number" placeholder="0">
+                <p>Class</p>
+                <a ng-click="vintageFilter()">Vintage</a>
+                <a ng-click="luxuryFilter()">Luxury</a>
+                <a ng-click="casualFilter()">Casual</a>
+                <p>Type</p>
+                <a ng-click="automaticFilter()">Automatic Watch</a>
+                <a ng-click="digitalFilter()">Digital Watch</a>
+                <a ng-click="sportFilter()">Sport Watch</a>
+                <a ng-click="smartFilter()">Smart Watch</a>
+                <p>Brand</p>
+                <a ng-click="rolexFilter()">Rolex</a>
+                <a ng-click="hublotFilter()">Hublot</a>
+                <a ng-click="citizenFilter()">Citizen</a>
+                <a ng-click="patekphilippeFilter()">Patek Philippe</a>
+                <a ng-click="movadoFilter()">Movado</a>
+                <a ng-click="michaelkorsFilter()">Michael Kors</a>
+                <a ng-click="vacheronconstantinFilter()">Vacheron Constantin</a>
+                <a ng-click="omegaFilter()">Omega</a>
+                <a ng-click="breitlingFilter()">Breitling</a>
+                <a ng-click="tagheuerFilter()">Tag Heuer</a>
+                <a ng-click="montblancFilter()">Montblanc</a>
+                <p>Gender</p>
+                <a ng-click="menFilter()">Men's</a>
+                <a ng-click="laddiesFilter()">Laddies's</a>
+                <a ng-click="unisexFilter()">Unisex</a>
+            </div>
+
+            <div class="shop-Product">
+                <div class="card" ng-repeat="data in watchList | filter : search | orderBy: sort.cot : sort.descending">
+                    <img src="{{ data.imgS }}" alt="watch">
+                    <p class="brand">{{ data.brand }}</p>
+                    <p class="price">${{ data.price }}</p>
+                    <p class="name">{{ data.name }}</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
