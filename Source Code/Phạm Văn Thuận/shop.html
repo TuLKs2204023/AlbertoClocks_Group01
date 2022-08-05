@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="shop.css" />
+  <script src="shop.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="shop-heading">
+    <img src="./assets/images/shop/heading/heading.jpg" alt="alberto" />
+    <div class="heading-content">
+      <h3>Watches</h3>
+      <p>Time with Perfection</p>
+    </div>
+  </div>
+  <section class="section__padding">
+    <div class="page-content">
+      <div class="list-product">
+        <div class="sort-product">
+          <div ng-click="sideBar()" class="view-list">
+            <i class="bx bx-sidebar"></i>
+          </div>
+
+          <div class="sort-list">
+            <select name="orderby">
+              <option value="popularity">Sort by popularity</option>
+              <option value="price">Sort by price: low to high</option>
+              <option value="price-desc">Sort by price: high to low</option>
+            </select>
+          </div>
+
+
+        </div>
+        <div class="list-items" id="placeholder">
+          <div item class="item" ng-repeat="data in watches | filter : search | filter: watchType ">
+            <img src="{{data.imgS}}" alt="alberto" />
+            <div class="item-rating">
+              <p>-5%</p>
+              <i item-heart class="bx bx-heart"></i>
+            </div>
+            <div class="item-content">
+              <h3>{{data.name}}</h3>
+              <h4>{{data.brand}}</h4>
+              <p>${{data.price}}</p>
+              <li><a href="#">ADD TO CART</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div side-bar class="sidebar">
+        <div ng-click="CloseBar()" class=" sidebar-close">
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="search">
+          <input ng-model="search" type="text" placeholder="Search for products..." />
+          <a href="#"><i class="bx bx-search"></i></a>
+        </div>
+        <div class="shopping-cart">
+          <h4>Shopping Cart</h4>
+          <div>
+            <p>No Products in Cart</p>
+          </div>
+        </div>
+        <div class="categories">
+          <div class="category">
+            <h4>All Watches</h4>
+            <li><a filter-watch ng-click="MyFilter('')">ALL</a></li>
+          </div>
+          <div class="category">
+            <h4>By Brand</h4>
+            <li><a filter-watch ng-click="MyFilter('rolex')">ROLEX</a></li>
+            <li><a filter-watch ng-click="MyFilter('hublot')">HOBLOT</a></li>
+            <li>
+              <a filter-watch ng-click="MyFilter('citizen')">CITIZEN</a>
+            </li>
+            <li>
+              <a filter-watch ng-click="MyFilter('patek')">PATEK PHILIPPE</a>
+            </li>
+            <li><a filter-watch ng-click="MyFilter('movado')">MOVADO</a></li>
+            <li>
+              <a filter-watch ng-click="MyFilter('michael kors')">MICHAEL KORS
+              </a>
+            </li>
+            <li>
+              <a filter-watch ng-click="MyFilter('vacheron')">VACHERON CONSTANTAIN</a>
+            </li>
+            <li><a filter-watch ng-click="MyFilter('omega')">OMEGA</a></li>
+            <li>
+              <a filter-watch ng-click="MyFilter('breitling')">BREITLING</a>
+            </li>
+            <li>
+              <a filter-watch ng-click="MyFilter('heuer')">TAG HEUER</a>
+            </li>
+            <li>
+              <a filter-watch ng-click="MyFilter('montblanc')">MONTBLANC</a>
+            </li>
+          </div>
+
+          <div class="category">
+            <h4>By Style</h4>
+            <li>
+              <a filter-watch ng-click="MyFilter('automatic')">AUTOMATIC WATCH</a>
+            </li>
+            <li>
+              <a filter-watch ng-click="MyFilter('digital')">DIGITAL WATCH</a>
+            </li>
+            <li>
+              <a filter-watch ng-click="MyFilter('sport')">SPORT WATCH</a>
+            </li>
+            <li>
+              <a filter-watch ng-click="MyFilter('smart watch')">SMART WATCH</a>
+            </li>
+          </div>
+
+          <div class="category">
+            <h4>By Class</h4>
+            <li>
+              <a filter-watch ng-click="MyFilter('vintage')">VINTAGE</a>
+            </li>
+            <li><a filter-watch ng-click="MyFilter('luxury')">LUXURY</a></li>
+            <li><a filter-watch ng-click="MyFilter('casual')">FASHION</a></li>
+          </div>
+          <div class="category">
+            <h4>By Gender</h4>
+            <li><a filter-watch ng-click="MyFilter('men')">MEN'S</a></li>
+            <li>
+              <a filter-watch ng-click="MyFilter('laddies')">WOMEN'S</a>
+            </li>
+            <li><a filter-watch ng-click="MyFilter('unisex')">UNISEX</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
