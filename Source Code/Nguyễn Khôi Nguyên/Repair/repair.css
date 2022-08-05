@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hi >img {
+    width: 100%;
+}
+
+.hi >.content1 {
+    position: absolute;
+    top: 13%;
+    left: 7%;
+
+}
+
+.content1 >.top {
+    display: grid;
+    grid-template-columns: repeat(3, 385px);
+    font-size: 40px;
+    color: White;
+    font-family: 'Karla', sans-serif;
+}
+
+.content1 >.middle {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 385px);
+    font-size: large;
+    color: rgb(48, 47, 47);
+    font-family: 'Karla', sans-serif;
+}
+
+.content1 >.bottom {
+    margin-top: 2%;
+}
+
+.content1 >.bottom > button {
+    font-family: 'Karla', sans-serif;
+    font-size: large;
+    padding: 14px 40px;
+    background-color: rgba(188, 186, 189, 255);
+    border-width: 3px;
+    border-color: black;
+}
+
+.content1 >.bottom > button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-out 0s;
+}
+
+
+
+.content2 >.top {
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: x-large;
+}
+.content2 >.middle{
+    margin-top: 2%;
+    text-align: center;
+    font-size: large;
+    color: rgb(125, 125, 125);
+}
+.content2 >.bottom{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content2 >.bottomjr{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+.content2 >.bottomjrson >.top >.top{
+    font-size: larger;
+    position: absolute;
+    left: 15%;
+    top: 205%;
+}
+.content2 >.bottomjrson >.top >.middle{
+    font-size: larger;
+    position: absolute;
+    left: 47%;
+    top: 205%;
+}
+.content2 >.bottomjrson >.top >.bottom{
+    font-size: larger;
+    position: absolute;
+    left: 81%;
+    top: 205%;
+}
+
+
+
+.content2 >.bottomjrson >.middle >.top{
+    position: absolute;
+    left: 11%;
+    top: 210%;
+    font-size: 300%;
+    text-decoration: none;
+    
+}
+.content2 >.bottomjrson >.middle >.middle{
+    position: absolute;
+    left: 44%;
+    top: 210%;
+    font-size: 300%;
+    text-decoration: none;
+    
+}
+.content2 >.bottomjrson >.middle >.bottom{
+    position: absolute;
+    left: 77%;
+    top: 210%;
+    font-size: 300%;
+    text-decoration: none;
+}
+.content3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.content3 >.all > h1{
+    margin: 30% 20% 0 20%;
+    font-family: 'Karla', sans-serif;
+    font-size: 300%;
+    
+}
+.content3 >.all > p{
+    margin: 5% 20% 5% 20%;
+    display: grid;
+    font-family: 'Karla', sans-serif;
+    
+}
+
+.content3 >.all > button {
+    margin-left: 11%;
+    position: absolute;
+    font-family: 'Karla', sans-serif;
+    font-size: 125%;
+    padding: 14px 40px;
+    background-color: white;
+    border-width: 3px;
+    border-color: black;
+}
+
+.content3 >.all > button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-out 0s;
+}
+.content3 >.image {
+    margin-top  : 10%;
+    margin-right: 15%;
+}
+
+.content4 >.top{
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: x-large;
+}
+.content4 >.middle{
+    position: absolute;
+    margin-top: 15%;
+    font-size: larger;
+    background-color: rgba(248,247,246,255);
+    padding: 10% 10%;
+}
