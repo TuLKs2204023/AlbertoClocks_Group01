@@ -15,7 +15,7 @@
 ======================================= <br>
 **Documentations:**    *https://github.com/TuLKs2204023/AlbertoClocks_Group01*
 <br> <br>
-**Published website**: *https://chienpham1605.github.io/BidSpirit_Group-5/*
+**Published website**: *https://tulks2204023.github.io/AlbertoClocks_Group01*
  <br>
 =======================================  <br>                            
 Thank you for visit our website.
