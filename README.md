@@ -13,7 +13,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     4. Phạm Văn Thuận (Student1378435)<br>
  
 ======================================= <br>
-**Documentations:**    *https://github.com/chienpham1605/BidSpirit_Group-5/tree/main/Documentations*
+**Documentations:**    *https://github.com/TuLKs2204023/AlbertoClocks_Group01*
 <br> <br>
 **Published website**: *https://chienpham1605.github.io/BidSpirit_Group-5/*
  <br>
