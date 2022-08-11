@@ -18,4 +18,4 @@
 **Published website**: *https://tulks2204023.github.io/AlbertoClocks_Group01*
  <br>
 =======================================  <br>                            
-Thank you for visit our website.
+Thank you for visiting our website.
