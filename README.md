@@ -18,5 +18,5 @@
 <br> <br>
 **Published website**: *https://tulks2204023.github.io/AlbertoClocks_Group01*
  <br>
-<hr>                         
+<hr> <br>                        
 Thank you for visiting our website.
