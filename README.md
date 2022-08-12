@@ -1,6 +1,5 @@
 # Alberto Clocks
 
-**<hr>**
 
 **Supervisor:**&nbsp;   LE THANH NHAN </br> 
 **Semester:**&nbsp;&nbsp;&nbsp;    I <br>
